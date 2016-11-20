@@ -18,8 +18,8 @@ public class EnemyAIActor : MonoBehaviour, Actor {
 
     public float rangeDelay = 0.1f;
     public float rangeTime = 0.1f;
-    public float rangeParticleHeight = 1f;
-    public GameObject rangeProjectile;
+    public string rangeBehaviorName;
+    private MonoBehaviour rangeBehavior;
 
 	public float mediumRadius;
 	public float smallRadius;
@@ -32,6 +32,20 @@ public class EnemyAIActor : MonoBehaviour, Actor {
 	void Start () {
 		animator = gameObject.GetComponent<Animator>();
         seek = gameObject.GetComponent<Seek>();
+        InitExternalBehaviors();
+    }
+
+    private void InitExternalBehaviors()
+    {
+        foreach (Component component in gameObject.GetComponents(typeof(MonoBehaviour)))
+        {
+            MonoBehaviour behavior = (MonoBehaviour) component;
+            if (component.GetType().ToString() == rangeBehaviorName)
+            {
+                rangeBehavior = behavior;
+                rangeBehavior.enabled = false;
+            }
+        }
     }
 
 	void OnTriggerStay2D(Collider2D collider) {
@@ -70,15 +84,9 @@ public class EnemyAIActor : MonoBehaviour, Actor {
 		return false;
 	}
 
-    public bool IsTargetInHorizontalProjectileRange()
+    public bool IsTargetInRangeRadius()
     {
-        if (target == null)
-        {
-            return false;
-        }
-        float y = target.transform.position.y - transform.position.y;
-        float offset = rangeParticleHeight / 2;
-        if ((-offset < y) && (y < offset))
+        if (target != null && (target.transform.position - transform.position).magnitude > mediumRadius) 
         {
             return true;
         }
@@ -176,25 +184,22 @@ public class EnemyAIActor : MonoBehaviour, Actor {
         return BehaviourTree.State.RUNNING;
     }
 
-    public BehaviourTree.State RangeAttack(BehaviourTreeNode<Tuple<float, GameObject>> node)
+    public BehaviourTree.State RangeAttack(BehaviourTreeNode<float> node)
     {
-        if (node.Result == null)
-        {
-            node.Result = new Tuple<float, GameObject>();
-        }
         animator.SetBool("range", true);
         animator.SetBool("prepare", false);
-        node.Result.Val1 += Time.deltaTime;
-        if (node.Result.Val2 == null) {
-            Transform parent = transform.FindChild("ProjectilePivot");
-            node.Result.Val2 = Instantiate(rangeProjectile, parent);
-            node.Result.Val2.transform.position = parent.position;
-        }
-        if (node.Result.Val1 > rangeTime)
+        node.Result += Time.deltaTime;
+        if (rangeBehavior)
         {
-            Destroy(node.Result.Val2);
-            node.Result.Val1 = 0;
-            node.Result.Val2 = null;
+            rangeBehavior.enabled = true;
+        }
+        if (node.Result > rangeTime)
+        {
+            node.Result = 0;
+            if (rangeBehavior)
+            {
+                rangeBehavior.enabled = false;
+            }
             return BehaviourTree.State.SUCCESS;
         }
         return BehaviourTree.State.RUNNING;
@@ -241,11 +246,11 @@ public class EnemyAIActor : MonoBehaviour, Actor {
     private BehaviourTree.Node GetRangeTree()
     {
         return new BinaryTreeNode(
-            IsTargetInHorizontalProjectileRange,
+            IsTargetInRangeRadius,
             new SequenceTreeNode(new BehaviourTree.Node[] {
                 new ActionTreeNode<System.Object>(Wake),
                 new ActionTreeNode<float>(PrepareRangeAttack),
-                new ActionTreeNode<Tuple<float, GameObject>>(RangeAttack),
+                new ActionTreeNode<float>(RangeAttack),
                 new ActionTreeNode<System.Object>(WithdrawAttack)
             }),
             new SequenceTreeNode(new BehaviourTree.Node[] {

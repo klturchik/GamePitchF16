@@ -1,0 +1,476 @@
+fileFormatVersion: 2
+guid: 39cf19726f5b6db4ba47d0bba970744c
+timeCreated: 1483638001
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Death_Idle1
+    21300002: Death_Idle2
+    21300004: Death_Idle3
+    21300006: Death_Portrait
+    21300008: Death_MoveSideways1
+    21300010: Death_MoveSideways2
+    21300012: Death_PrepareSlash1
+    21300014: Death_PrepareSlash2
+    21300016: Death_PrepareSlash3
+    21300018: Death_Slash1
+    21300020: Death_Slash2
+    21300022: Death_Slash3
+    21300024: Death_Slash4
+    21300026: Death_Slash5
+    21300028: Death_FireLaser1
+    21300030: Death_FireLaser2
+    21300032: Death_FireLaser3
+    21300034: Death_FireLaser4
+    21300036: Death_FireLaser5
+    21300038: Mobile - Demon Hunter Legend 2 - Death_22
+    21300040: Mobile - Demon Hunter Legend 2 - Death_24
+    21300042: Death_Teleport1
+    21300044: Death_Teleport2
+    21300046: Death_Laser1
+    21300048: Death_Laser5
+    21300050: Death_Laser4
+    21300052: Death_Laser3
+    21300054: Death_Laser2
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 40
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Death_Idle1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 773
+        width: 122
+        height: 116
+      alignment: 9
+      pivot: {x: 0.4, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Death_Idle2
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 772
+        width: 122
+        height: 116
+      alignment: 9
+      pivot: {x: 0.4, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Death_Idle3
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 770
+        width: 122
+        height: 116
+      alignment: 9
+      pivot: {x: 0.4, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Death_Portrait
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 814
+        width: 67
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Death_MoveSideways1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 646
+        width: 110
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Death_MoveSideways2
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 646
+        width: 110
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Death_PrepareSlash1
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 483
+        width: 115
+        height: 150
+      alignment: 9
+      pivot: {x: 0.67, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Death_PrepareSlash2
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 483
+        width: 115
+        height: 150
+      alignment: 9
+      pivot: {x: 0.67, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Death_PrepareSlash3
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 483
+        width: 115
+        height: 150
+      alignment: 9
+      pivot: {x: 0.67, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Death_Slash1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 327
+        width: 165
+        height: 136
+      alignment: 9
+      pivot: {x: 0.4877003, y: 0.43533662}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Death_Slash2
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 318
+        width: 166
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4877744, y: 0.45243526}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Death_Slash3
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 317
+        width: 139
+        height: 98
+      alignment: 9
+      pivot: {x: 0.56813455, y: 0.59664047}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Death_Slash4
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 321
+        width: 110
+        height: 110
+      alignment: 9
+      pivot: {x: 0.46310148, y: 0.5307495}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Death_Slash5
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 320
+        width: 110
+        height: 110
+      alignment: 9
+      pivot: {x: 0.46310148, y: 0.5368991}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Death_FireLaser1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 173
+        width: 128
+        height: 118
+      alignment: 9
+      pivot: {x: 0.4092952, y: 0.5382634}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Death_FireLaser2
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 173
+        width: 128
+        height: 118
+      alignment: 9
+      pivot: {x: 0.3941778, y: 0.5382634}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Death_FireLaser3
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 173
+        width: 128
+        height: 118
+      alignment: 9
+      pivot: {x: 0.44456935, y: 0.5382634}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Death_FireLaser4
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 176
+        width: 112
+        height: 130
+      alignment: 9
+      pivot: {x: 0.6670118, y: 0.49503842}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Death_FireLaser5
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 176
+        width: 112
+        height: 130
+      alignment: 9
+      pivot: {x: 0.67853004, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile - Demon Hunter Legend 2 - Death_22
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 96
+        width: 4
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Mobile - Demon Hunter Legend 2 - Death_24
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 104
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Death_Teleport1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 9
+        width: 111
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Death_Teleport2
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 8
+        width: 15
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Death_Laser1
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 105
+        width: 111
+        height: 3
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Death_Laser5
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 100
+        width: 111
+        height: 14
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Death_Laser4
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 101
+        width: 111
+        height: 12
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Death_Laser3
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 101
+        width: 111
+        height: 11
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Death_Laser2
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 102
+        width: 111
+        height: 9
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
